@@ -39,7 +39,7 @@ table tr:nth-child(odd){
                     echo "<td>" . $employee->salary."</td>";
                     echo "<td> 
                                 <a href='/mvc/employee/edit/"   . $employee->id . "'>Edit</a>
-                                <a href='/mvc/employee/delete/" . $employee->id . "'>Delete</a>";
+                                <a class='delete-confirm' href='/mvc/employee/delete/" . $employee->id . "'>Delete</a>";
                     echo "</td>";                                                           
                 echo "</tr>";     
                 }

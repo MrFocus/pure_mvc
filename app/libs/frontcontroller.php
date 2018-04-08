@@ -9,8 +9,13 @@ class FrontController {
     private 
         $_controller = 'index',
         $_action     = 'default',
-        $_params     = array();
-    public function __construct(){
+        $_params     = array(),
+        $_template,
+        $_language;
+
+    public function __construct(Template $template,Language $language){
+        $this->_template = $template;
+        $this->_language = $language;
         $this->parseURL();
     }
     private function parseURL(){
@@ -39,6 +44,8 @@ class FrontController {
         $controller->setController($this->_controller);
         $controller->setAction($this->_action);
         $controller->setParams($this->_params);
+        $controller->setTemplate($this->_template);
+        $controller->setLanguage($this->_language);
         $controller->$actionName();   // executing method in URL     
     }
 }

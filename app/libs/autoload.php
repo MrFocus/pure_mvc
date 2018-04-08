@@ -11,6 +11,7 @@ class Autoload{
 	}
 }
 spl_autoload_register(__NAMESPACE__ .'\Autoload::autoload');
+
 // spl_autoload_register(function($class){
 // 	  $class = str_replace("mvc\\","", strtolower($class));
 // 	  $class = APP_PATH . DS . $class . ".php";

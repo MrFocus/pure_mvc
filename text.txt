@@ -1,0 +1,15 @@
+Alias /mvc "C:\xampp\htdocs\mvc"
+<Directory "C:\xampp\htdocs\mvc"
+	AllowOverride All
+	Order allow,deny
+	Allow from all
+</Directory>
+
+
+NameVirtualHost *:80
+<VirtualHost *:80>
+	ServerName mvc.com
+	ServerAlias mvc.com
+	ServerAdmin admin@mvc.com
+	DocumentRoot "C:\xampp\htdocs\mvc"
+</VirtualHost>

@@ -12,13 +12,16 @@ class EmployeeController extends AbstractController{
     
 // DefaultAdcton .. 
     public function defaultAction(){
-
+        $this->_language->load('employee/default');
         $this->_data['employees'] = EmployeeModel::getAll();
         $this->_view();
+        
     }
 
 //AddAction ..
     public function addAction(){
+        $this->_language->load('employee/add');
+
         if(isset($_POST['submit'])){
             $employee = new EmployeeModel();
 

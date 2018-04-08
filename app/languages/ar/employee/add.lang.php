@@ -1,0 +1,21 @@
+<?php
+$_['title']                                        = 'إضافة موظف';
+$_['text_employee_details']                        = 'تفاصيل الموظف';
+$_['text_label_name']                              = 'إسم الموظف';
+$_['text_label_address']                           = 'عنوان الموظف';
+$_['text_label_gender']                            = 'جنس الموظف';
+$_['text_label_gender_male']                       = 'ذكر';
+$_['text_label_gender_female']                     = 'مؤنث';
+$_['text_label_age']                               = 'العمر ';
+$_['text_label_salary']                            = 'المرتب'; 
+$_['text_label_tax']                               = 'الضريبة';
+$_['text_label_choose_employee_type']              = 'نوع الدوام';
+$_['text_label_type_part_time']                    = 'دوام جزئي';
+$_['text_label_type_full_time']                    = ' دوام كلي ';
+$_['text_label_os']                                = 'نظام التشغيل';
+$_['text_label_os_windows']                        = 'ويندوز';
+$_['text_label_os_linux']                          = 'لينكس';
+$_['text_label_os_mac']                            = 'ماك';
+$_['text_label_notes']                             = 'ملاحظات';
+$_['text_label_save']                              = 'حفظ';
+$_['change_language']                             = 'تغيير اللغة';
